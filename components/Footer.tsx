@@ -10,12 +10,12 @@ export default function Footer() {
         <nav aria-label="Pie de página">
           <ul className="flex flex-col gap-2 text-sm md:items-end">
             <li>
-              <a href="#inicio" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="#nosotros" className="hover:underline">
+              <a href="/nosotros" className="hover:underline">
                 Nosotros
               </a>
             </li>
