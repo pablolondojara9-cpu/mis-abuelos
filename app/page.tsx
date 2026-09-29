@@ -1,6 +1,4 @@
 import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const pillars = [
   {
@@ -35,7 +33,6 @@ const workAreas = [
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="flex-1">
         <section
           id="inicio"
@@ -46,7 +43,7 @@ export default function Home() {
               Corporación Apoyo Social
             </p>
             <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-              Dignidad, fe y comunidad
+              Dignidad, fe y comunidad 
             </h1>
             <p className="mt-5 max-w-md text-lg leading-7 text-muted">
               Acompañamos a nuestros adultos mayores con amor, respeto y
@@ -212,7 +209,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
