@@ -7,16 +7,16 @@ export default function NosotrosHero() {
                 {/* Contenido que estaba dentro del círculo azul */}
                 <div className="max-w-md">
 
-                    <p className="mb-4 text-sm font-semibold uppercase tracking-widest">
+                    <p className="mb-4 text-sm font-menu font-semibold uppercase tracking-widest text-[var(--accent)]">
                         Nosotros
                     </p>
 
-                    <h1 className="font-serif text-5xl font-semibold leading-[1.05]">
-                    Creemos en historias
-                    <br />
-                    que siguen haciendo
-                    <br />
-                    vida.
+                    <h1 className="font-title text-5xl font-semibold leading-[1.05] text-[var(--foreground)]">
+                        Creemos en historias
+                        <br />
+                        que siguen haciendo
+                        <br />
+                        <span className="font-body font-bold text-[var(--accent)]">vida.</span>
                     </h1>
 
                 </div>
