@@ -1,32 +1,7 @@
 import NosotrosHero from "@/components/nosotros/NosotrosHero";
+import NosotrosValores from "@/components/nosotros/NosotrosValores";
 
-const values = [
-    {
-      title: "Respeto",
-      description:
-        "Valoramos su historia, sus decisiones y su lugar en la comunidad.",
-    },
-    {
-      title: "Amor",
-      description:
-        "Actuamos con empatía y calidez en cada encuentro.",
-    },
-    {
-      title: "Fe",
-      description:
-        "Creemos en las personas y en las segundas oportunidades.",
-    },
-    {
-      title: "Solidaridad",
-      description:
-        "Caminamos juntos para que nadie envejezca solo.",
-    },
-    {
-      title: "Comunidad",
-      description:
-        "Construimos espacios de encuentro, apoyo y pertenencia.",
-    },
-];
+
 
 export default function NosotrosPage() {
 	return (
@@ -57,7 +32,7 @@ export default function NosotrosPage() {
 
                     <div className="max-w-xs text-center">
 
-                        <p className="font-serif text-3xl font-medium leading-tight">
+                        <p className="font-title text-3xl font-medium italic leading-tight text-[var(--foreground)]">
                             Un presente
                             <br />
                             más humano,
@@ -72,63 +47,7 @@ export default function NosotrosPage() {
                 </div>
             </section>
 
-            <section className="relative overflow-hidden">
-
-                <div className="mx-auto max-w-7xl px-6 py-16 md:px-12">
-
-                    {/* Título */}
-
-                    <div className="mb-12">
-
-                        <h2 className="font-serif text-4xl font-semibold">
-                        Nuestros
-                        <br />
-                        valores
-                        </h2>
-
-                    </div>
-
-                    <div className="flex flex-wrap justify-center">
-
-                        {values.map((value, index) => (
-                            <article
-                                key={value.title}
-                                className="
-                                w-full
-                                border-b
-                                px-6
-                                py-8
-                                text-center
-
-                                sm:w-1/2
-
-                                lg:w-1/5
-                                lg:border-b-0
-                                lg:border-r
-                                lg:last:border-r-0
-                                "
-                            >
-
-                                {/* Nombre del valor */}
-
-                                <h3 className="mb-4 font-serif text-xl font-semibold">
-                                    {value.title}
-                                </h3>
-
-
-                                {/* Descripción */}
-
-                                <p className="text-sm leading-relaxed">
-                                    {value.description}
-                                </p>
-
-                            </article>
-                        ))}
-
-                    </div>
-
-                </div>
-            </section>
+            <NosotrosValores />
         </>
     );
 }

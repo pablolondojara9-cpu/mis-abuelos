@@ -18,8 +18,10 @@
   --color-accent-hover: var(--accent-hover);
   --color-surface: var(--surface);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Add any additional theme variables here */
+  --font-body: var(--font-body), sans-serif;
+  --font-title: var(--font-title), serif;
+  --font-menu: var(--font-menu), sans-serif;
 }
 
 html {
@@ -29,7 +31,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
